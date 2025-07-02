@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>⚔️ Batalha Medieval ⚔️</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1><span>⚔️</span> Batalha Medieval <span>⚔️</span></h1>
+  <p>Arraste seus guerreiros para as arenas e lute!</p>
+</header>
+
+<main>
+  <section class="arenas">
+    <div class="arena" id="arena1" data-name="Arena do Guerreiro 1">
+      <h2>Arena do Guerreiro 1</h2>
+      <div class="dropzone" id="drop1">Arraste um guerreiro aqui</div>
+    </div>
+
+    <div class="status" id="status">
+  <p><strong>Status:</strong> Aguardando guerreiros...</p>
+  <button id="resetBtn">Reiniciar Batalha</button>
+  <button id="startBtn">Iniciar</button> <!-- Botão adicionado -->
+</div>
+
+
+    <div class="arena" id="arena2" data-name="Arena do Guerreiro 2">
+      <h2>Arena do Guerreiro 2</h2>
+      <div class="dropzone" id="drop2">Arraste um guerreiro aqui</div>
+    </div>
+  </section>
+
+  <section class="guerreiros-section">
+    <h3>Escolha seus Guerreiros</h3>
+    <div class="guerreiros" id="guerreiros">
+      <!-- Cards de guerreiros serão gerados via JS -->
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
